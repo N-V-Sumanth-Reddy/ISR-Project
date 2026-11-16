@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{0.46\linewidth}rr}
+\toprule
+Outcome & PubMedQA & Handbook \\
+\midrule
+Answerable: correct, cited and supported & 14 & 9 \\
+Answerable: correct, but citation problem & 60 & 10 \\
+Answerable: correct, but unsupported claim & 2 & 0 \\
+Answerable: wrong conclusion (gold passage retrieved) & 15 & 0 \\
+Answerable: declined (gold passage retrieved) & 8 & 6 \\
+Answerable: gold passage not retrieved & 1 & 0 \\
+Out-of-collection: declined & 30 & 10 \\
+\bottomrule
+\end{tabular}
+\caption{Outcome of every test question, by category (each question gets exactly one category; see failures.csv for the examples).}
+\label{tab:failures}
+\end{table}

@@ -1,0 +1,96 @@
+# Default settings for the private RAG search engine.
+# Machine-specific overrides go in config.local.yaml (written by scripts/00_check_env.py).
+
+paths:
+  data_dir: data
+  index_dir: indexes
+  results_dir: results
+
+chunking:
+  chunk_words: 200        # proposal: overlapping passages of about 200 words
+  overlap_words: 40
+
+bm25:
+  k1: 0.9                 # starting point (Anserini defaults); tuned on the dev split
+  b: 0.4
+  stem: true
+  stopwords: true
+
+dense:
+  model: sentence-transformers/all-MiniLM-L6-v2     # primary bi-encoder (384-d)
+  extra_models:                                     # also indexed, for the encoder ablation
+    - BAAI/bge-small-en-v1.5
+  batch_size: 64
+  max_seq_length: 256
+  device: auto            # auto | mps | cuda | cpu
+  backend: auto           # auto | faiss | numpy (exact inner-product search either way)
+
+rerank:
+  model: cross-encoder/ms-marco-MiniLM-L-6-v2
+  top_n: 50               # proposal: optionally rerank the top 50
+
+fusion:
+  method: rrf             # rrf | weighted
+  rrf_k: 60
+  depth: 100              # proposal: fuse the top-100 lists
+  alpha: 0.5              # dense weight for weighted fusion (tuned on dev)
+
+retrieval:
+  mode: hybrid            # bm25 | dense | hybrid
+  top_k: 5                # tuned over {3, 5, 8} on dev
+  rerank: false
+  kg: false
+
+kg:
+  max_entities_per_passage: 12
+  min_df: 2
+  max_df_ratio: 0.05
+  weight: 1.0             # weight of the KG ranker inside RRF
+
+llm:
+  backend: ollama         # ollama | openai (any OpenAI-compatible local server, e.g. llama.cpp)
+  host: http://localhost:11434
+  model: llama3.1:8b      # generator (7-8B, instruction tuned)
+  judge_model: qwen2.5:7b # judge / verifier, a different model family than the generator
+  temperature: 0.0
+  seed: 42
+  num_ctx: 8192
+  max_tokens: 320
+  keep_alive: 30m
+  timeout_s: 600
+
+abstention:
+  signal: dense_top       # rrf_top | dense_top | bm25_top | ce_top (chosen on dev by the eval)
+  threshold: null         # null = score-threshold abstention off until tuned
+
+eval:
+  seed: 13
+  trec_covid:
+    dev_queries: 15       # remaining 35 topics are the test split
+  pubmedqa:
+    test_answerable: 100
+    test_unanswerable: 30
+    dev_answerable: 40
+    dev_unanswerable: 20
+  top_k_grid: [3, 5, 8]
+  citation_nli_model: cross-encoder/nli-deberta-v3-base
+  citation_nli_window: 2  # score NLI on 2-sentence windows of a passage, max over windows (SummaC-style);
+                          # 0 = whole passage, which this sentence-level model labels "neutral" almost always
+                          # (see scripts/validate_citation_nli.py)
+  citation_backend: nli   # nli | llm
+
+# Run profiles (python scripts/... --profile NAME). "standard" is the configuration above.
+profiles:
+  smoke:                      # a few minutes: checks that every stage runs on this machine
+    paths: {index_dir: indexes_smoke, results_dir: results_smoke}
+    dense: {extra_models: []}
+    eval:
+      trec_covid: {dev_queries: 5, max_docs: 4000, max_queries: 14}
+      pubmedqa: {test_answerable: 8, test_unanswerable: 4, dev_answerable: 6, dev_unanswerable: 4}
+      top_k_grid: [3, 5]
+      handbook_limit: 8
+  standard: {}
+  full:                       # everything in the proposal's ablation list (several more hours)
+    eval:
+      answer_mode_ablation: true
+      trec_chunk_ablation: true

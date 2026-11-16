@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Fusion method & dev & test \\
+\midrule
+RRF, k=10 & 0.683 & 0.658 \\
+RRF, k=30 & 0.718 & 0.669 \\
+RRF, k=60 & 0.749 & 0.698 \\
+RRF, k=100 & 0.748 & 0.690 \\
+Weighted, $\alpha$=0.5 (tuned on dev) & 0.686 & 0.642 \\
+Weighted, $\alpha$=0 (BM25 only) & 0.658 & 0.620 \\
+Weighted, $\alpha$=1 (dense only) & 0.576 & 0.576 \\
+Dynamic $\alpha$ (DAT-style), mean $\alpha$=0.34 & 0.624 & 0.648 \\
+Hybrid + entity graph, w=0.25 & 0.745 & 0.706 \\
+Hybrid + entity graph, w=0.50 & 0.744 & \textbf{0.710} \\
+Hybrid + entity graph, w=1.00 & 0.723 & 0.699 \\
+\bottomrule
+\end{tabular}
+\caption{Fusion ablation on TREC-COVID (nDCG@10, BM25 + MiniLM-L6). $\alpha$ is the dense weight.}
+\label{tab:ablation_fusion}
+\end{table}

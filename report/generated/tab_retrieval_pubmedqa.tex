@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+System & R@1 & R@5 & R@10 & MRR@10 \\
+\midrule
+BM25 (default $k_1$=0.9, $b$=0.4) & 0.970 & 0.990 & 0.990 & 0.980 \\
+BM25 (tuned on dev) & 0.970 & 0.990 & 0.990 & 0.980 \\
+Dense (MiniLM-L6) & 0.980 & \textbf{1.000} & \textbf{1.000} & 0.990 \\
+Dense (bge-small) & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} \\
+Hybrid RRF (BM25 + MiniLM-L6) & 0.980 & 0.990 & 0.990 & 0.985 \\
+Hybrid RRF (BM25 + bge-small) & 0.980 & 0.990 & 0.990 & 0.985 \\
+BM25 + re-ranker & 0.990 & 0.990 & 0.990 & 0.990 \\
+Hybrid (BM25 + MiniLM-L6) + re-ranker & 0.990 & 0.990 & \textbf{1.000} & 0.991 \\
+Hybrid (BM25 + bge-small) + re-ranker & 0.990 & 0.990 & \textbf{1.000} & 0.991 \\
+Weighted score fusion (tuned) & 0.990 & 0.990 & \textbf{1.000} & 0.991 \\
+Hybrid + entity graph & 0.980 & 0.990 & 0.990 & 0.985 \\
+\bottomrule
+\end{tabular}
+\caption{PubMedQA known-item retrieval: finding the abstract a question was written about, among 950 abstracts (100 test questions).}
+\label{tab:retrieval_pubmedqa}
+\end{table*}

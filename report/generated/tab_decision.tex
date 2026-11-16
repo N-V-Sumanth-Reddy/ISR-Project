@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+System & Accuracy \% & Coverage \% & Acc. when answered \% \\
+\midrule
+Majority class & 61.0 & 100.0 & -- \\
+Closed-book LLM & 60.0 [50.2, 69.1] & 100.0 & -- \\
+RAG (ours) & 76.0 [66.8, 83.3] & 91.0 & 83.5 \\
+\bottomrule
+\end{tabular}
+\caption{PubMedQA yes / no / maybe accuracy on the 100 answerable test questions (95\% Wilson intervals). A declined question counts as wrong; coverage is the share answered. McNemar exact test on discordant pairs: p = 0.005 (RAG only correct on 23, closed-book only on 7).}
+\label{tab:decision}
+\end{table*}

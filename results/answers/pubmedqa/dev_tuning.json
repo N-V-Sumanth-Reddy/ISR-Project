@@ -1,0 +1,105 @@
+{
+  "source": "dev",
+  "top_k": {
+    "grid": {
+      "3": {
+        "utility": 0.7666666666666667,
+        "answerable_ok": 0.75,
+        "unanswerable_ok": 0.8,
+        "n": 60,
+        "gold_in_top_k": 1.0,
+        "mean_prompt_tokens": 938.0833333333334,
+        "mean_seconds": 0.5935540358225505
+      },
+      "5": {
+        "utility": 0.7666666666666667,
+        "answerable_ok": 0.75,
+        "unanswerable_ok": 0.8,
+        "n": 60,
+        "gold_in_top_k": 1.0,
+        "mean_prompt_tokens": 1411.5,
+        "mean_seconds": 0.6737318277359009
+      },
+      "8": {
+        "utility": 0.75,
+        "answerable_ok": 0.725,
+        "unanswerable_ok": 0.8,
+        "n": 60,
+        "gold_in_top_k": 1.0,
+        "mean_prompt_tokens": 2124.7833333333333,
+        "mean_seconds": 0.8322611967722575
+      }
+    },
+    "best": 3
+  },
+  "signals": {
+    "dense_top": {
+      "threshold": 0.6399204730987549,
+      "tpr": 1.0,
+      "fpr": 0.05,
+      "j": 0.95,
+      "auroc": 0.97625,
+      "n_answerable": 40,
+      "n_unanswerable": 20
+    },
+    "rrf_top": {
+      "threshold": 0.032654680063458494,
+      "tpr": 0.6,
+      "fpr": 0.05,
+      "j": 0.5499999999999999,
+      "auroc": 0.78625,
+      "n_answerable": 40,
+      "n_unanswerable": 20
+    },
+    "bm25_top": {
+      "threshold": 18.86752414703369,
+      "tpr": 0.85,
+      "fpr": 0.025,
+      "j": 0.825,
+      "auroc": 0.94125,
+      "n_answerable": 40,
+      "n_unanswerable": 20
+    },
+    "ce_top": {
+      "threshold": 1.8738980293273926,
+      "tpr": 0.95,
+      "fpr": 0.05,
+      "j": 0.8999999999999999,
+      "auroc": 0.98375,
+      "n_answerable": 40,
+      "n_unanswerable": 20
+    },
+    "overlap10": {
+      "threshold": 0.05,
+      "tpr": 0.1,
+      "fpr": 0.0,
+      "j": 0.1,
+      "auroc": 0.56625,
+      "n_answerable": 40,
+      "n_unanswerable": 20
+    }
+  },
+  "signal": "ce_top",
+  "threshold": 1.8738980293273926,
+  "dev_policies": {
+    "llm": {
+      "utility": 0.7666666666666667,
+      "answerable_ok": 0.75,
+      "unanswerable_ok": 0.8,
+      "n": 60
+    },
+    "threshold": {
+      "utility": 0.7833333333333333,
+      "answerable_ok": 0.7,
+      "unanswerable_ok": 0.95,
+      "n": 60
+    },
+    "combined": {
+      "utility": 0.8,
+      "answerable_ok": 0.7,
+      "unanswerable_ok": 1.0,
+      "n": 60
+    }
+  },
+  "n_dev": 60
+}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lr}
+\toprule
+Mode & ms / query \\
+\midrule
+bm25 & 16 \\
+dense & 16 \\
+hybrid & 17 \\
+hybrid + KG & 21 \\
+hybrid + re-ranker & 52 \\
+\bottomrule
+\end{tabular}
+\caption{Retrieval latency on the TREC-COVID index (238,432 passages), mean over 20 queries.}
+\label{tab:latency_retrieval}
+\end{table}

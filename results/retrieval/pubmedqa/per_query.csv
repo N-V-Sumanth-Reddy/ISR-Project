@@ -1,0 +1,141 @@
+qid,split,query,bm25_default,bm25,dense_all-MiniLM-L6-v2,dense_bge-small-en-v1.5,hybrid_all-MiniLM-L6-v2,hybrid_bge-small-en-v1.5,bm25_rerank,hybrid_rerank_all-MiniLM-L6-v2,hybrid_rerank_bge-small-en-v1.5,weighted,hybrid_kg
+10354335,dev,Can medical students contribute to quality assurance programmes in day surgery?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+11247896,dev,Can APC mutation analysis contribute to therapeutic decisions in familial adenomatous polyposis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+11888773,dev,Stage I non-small cell lung carcinoma: really an early stage?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+12690589,dev,Can continuous physical training counteract aging effect on myoelectric fatigue?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+14745753,dev,Is half-dose contrast-enhanced three-dimensional MR angiography sufficient for the abdominal aorta and pelvis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15065192,dev,Three-dimensional ultrasound-validated large-core needle biopsy: is it a reliable method for the histological assessment of breast lesions?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15125825,dev,Starting insulin in type 2 diabetes: continue oral hypoglycemic agents?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15800018,dev,Are even impaired fasting blood glucose levels preoperatively associated with increased mortality after CABG surgery?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15879722,dev,Is cytokeratin immunoreactivity useful in the diagnosis of short-segment Barrett's oesophagus in Korea?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+16195477,dev,Production of chemokines by perivascular adipose tissue: a role in the pathogenesis of atherosclerosis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+16319544,dev,Is high-sensitivity C-reactive protein associated with carotid atherosclerosis in healthy Koreans?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17105833,dev,Empiric treatment of uncomplicated urinary tract infection with fluoroquinolones in older women in Israel: another lost treatment option?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17559449,dev,Are sugars-free medicines more erosive than sugars-containing medicines?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18005142,dev,Does early migraine treatment shorten time to headache peak and reduce its severity?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18096128,dev,Cervical spine fractures in geriatric blunt trauma patients with low-energy mechanism: are clinical predictors adequate?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18403944,dev,Gluten tolerance in adult patients with celiac disease 20 years after diagnosis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18847643,dev,Therapeutic anticoagulation in the trauma patient: is it safe?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18948835,dev,Does somatostatin confer insulinostatic effects of neuromedin u in the rat pancreas?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19852337,dev,Does elective re-siting of intravenous cannulae decrease peripheral thrombophlebitis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20338971,dev,Does peritoneal dialysis affect halitosis in patients with end-stage renal disease?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20497146,dev,A model of healing of Los Angeles grades C and D reflux oesophagitis: is there an optimal time of acid suppression for maximal healing?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22301406,dev,CYP2D6*4 allele and breast cancer risk: is there any association?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22449464,dev,Do general practice selection scores predict success at MRCGP?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22768311,dev,Is human cytomegalovirus infection associated with hypertension?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22955530,dev,Type II supracondylar humerus fractures: can some be treated nonoperatively?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22972546,dev,Do approved doctors and medical referees in the UK agree when assessing a seafarer's fitness?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23147106,dev,Is peak concentration needed in therapeutic drug monitoring of vancomycin?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23264436,dev,Follow-up of patients with new cardiovascular implantable electronic devices: are experts' recommendations implemented in routine clinical practice?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23348330,dev,Nasal fractures:  is closed reduction satisfying?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24098953,dev,Are IgM-enriched immunoglobulins an effective adjuvant in septic VLBW infants?,0.5000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24142776,dev,Steroids in aminoglycoside-containing ear drops: do they reduce cochlear toxicity?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24695920,dev,Does anterior laxity of the uninjured knee influence clinical outcomes of ACL reconstruction?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24851767,dev,Undescended testes: does age at orchiopexy affect survival of the testis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24901580,dev,Is scintigraphy a guideline method in determining amputation levels in diabetic foot?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25218577,dev,Preservation of the PCL when performing cruciate-retaining TKA: Is the tibial tuberosity a reliable predictor of the PCL footprint location?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26044262,dev,Are income-related differences in active travel associated with physical environmental characteristics?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26285789,dev,Does Molecular Genotype Provide Useful Information in the Management of Radioiodine Refractory Thyroid Cancers?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26505821,dev,Are Biochemical Markers of Bone Turnover Representative of Bone Histomorphometry in 370 Postmenopausal Women?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8985020,dev,Does induction chemotherapy have a role in the management of nasopharyngeal carcinoma?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+9107172,dev,Bridge experience with long-term implantable left ventricular assist devices. Are they an alternative to transplantation?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+10158597,test,Does a dedicated discharge coordinator improve the quality of hospital discharge?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+11411430,test,Antral follicle assessment as a tool for predicting outcome in IVF--is it a better predictor than age and FSH?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+12006913,test,"Do lipids, blood pressure, diabetes, and smoking confer equal risk of myocardial infarction in women as in men?",1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+12121321,test,Do mossy fibers release GABA?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+12805495,test,Can patients be anticoagulated after intracerebral hemorrhage?,1.0000,1.0000,0.5000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+14627582,test,Double reading of barium enemas: is it necessary?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+14631523,test,Sub-classification of low-grade cerebellar astrocytoma: is it clinically meaningful?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+14692023,test,Is breast cancer survival improving?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+14968373,test,Can CT predict the level of CSF block in tuberculous hydrocephalus?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15041506,test,Is fear of anaphylactic shock discouraging surgeons from more widely adopting percutaneous and laparoscopic techniques in the treatment of liver hydatid cyst?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15053041,test,Do acute changes in heart rate by isoproterenol affect aortic stiffness in patients with hypertension?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15488260,test,Is the type of remission after a major depressive episode an important risk factor to relapses in a 4-year follow up?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15943725,test,Should serum pancreatic lipase replace serum amylase as a biomarker of acute pancreatitis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+15995461,test,Do some U.S. states have higher/lower injury mortality rates than others?,0.5000,0.5000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+16465002,test,Dose end-tidal carbon dioxide measurement correlate with arterial carbon dioxide in extremely low birth weight infants in the first week of life?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+16769333,test,Preoperative tracheobronchoscopy in newborns with esophageal atresia: does it matter?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17062234,test,Surgical management of the atherosclerotic ascending aorta: is endoaortic balloon occlusion safe?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17274051,test,Metastatic carcinoma to the cervical nodes from an unknown head and neck primary site: Is there a need for neck dissection?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17276182,test,Stretch-sensitive KCNQ1 mutation A link between genetic and environmental factors in the pathogenesis of atrial fibrillation?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17691856,test,Midwives' competence: is it affected by working in a rural location?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17894828,test,Serum angiotensin-converting enzyme and frequency of severe hypoglycaemia in Type 1 diabetes: does a relationship exist?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+17971187,test,Cholesterol screening in school children: is family history reliable to choose the ones to screen?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18065862,test,Can the postoperative pain level be predicted preoperatively?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18319270,test,Does confined placental mosaicism account for adverse perinatal outcomes in IVF pregnancies?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18496363,test,Characterization of the gender dimorphism after injury and hemorrhagic shock: are hormonal differences responsible?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+18667100,test,Do risk factors for suicidal behavior differ by affective disorder polarity?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19302863,test,Is the use of cyanoacrylate in intestinal anastomosis a good and reliable alternative?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19394934,test,Israeli hospital preparedness for terrorism-related multiple casualty incidents: can the surge capacity and injury severity distribution be better predicted?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19430778,test,Can magnetic resonance imaging accurately predict concordant pain provocation during provocative disc injection?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19520213,test,Are UK radiologists satisfied with the training and support received in suspected child abuse?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19546588,test,Does increasing blood pH stimulate protein synthesis in dialysis patients?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19593710,test,Could ESC (Electronic Stability Control) change the way we drive?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+19640728,test,Surgical treatment of prosthetic valve endocarditis in patients with double prostheses: is single-valve replacement safe?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20121683,test,Are patients willing participants in the new wave of community-based medical education in regional and rural Australia?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20297950,test,Proof of concept study: does fenofibrate have a role in sleep apnoea syndrome?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20602784,test,Identification of racial disparities in breast cancer mortality: does scale matter?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+20850631,test,Diagnosis and follow-up in constipated children: should we use ultrasound?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21074975,test,Ultra high risk (UHR) for psychosis criteria: are there different levels of risk for transition to psychosis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21123461,test,Are adult body circumferences associated with height?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21214884,test,Can 'high-risk' human papillomaviruses (HPVs) be detected in human breast milk?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21252642,test,Does increased patient awareness improve accrual into cancer-related clinical trials?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21342862,test,Is EQ-5D a valid quality of life instrument in patients with acute coronary syndrome?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21361755,test,Laminoplasty outcomes: is there a difference between patients with degenerative stenosis and those with ossification of the posterior longitudinal ligament?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21394762,test,Is pelvic pain associated with defecatory symptoms in women with pelvic organ prolapse?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21645374,test,Do mitochondria play a role in remodelling lace plant leaves during programmed cell death?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21689015,test,Can dogs prime autistic children for therapy?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+21952349,test,Remote ischemic postconditioning: does it protect against ischemic damage in percutaneous coronary revascularization?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22012962,test,"Marital status, living arrangement and mortality: does the association vary by gender?",1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22075911,test,Is there a differential in the dental health of new recruits to the British Armed Forces?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22382608,test,SPECT study with I-123-Ioflupane (DaTSCAN) in patients with essential tremor. Is there any correlation with Parkinson's disease?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22532370,test,Are increased carotid artery pulsatility and resistance indexes early signs of vascular abnormalities in young obese males?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22668712,test,Internal derangement of the temporomandibular joint: is there still a place for ultrasound?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22680064,test,Can third trimester ultrasound predict the presentation of the first twin at delivery?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22825590,test,Are behavioural risk factors to be blamed for the conversion from optimal blood pressure to hypertensive status in Black South Africans?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+22876568,test,Is vitamin D deficiency a feature of pediatric celiac disease?,0.5000,0.5000,1.0000,1.0000,0.5000,0.5000,1.0000,1.0000,1.0000,1.0000,0.5000
+23283159,test,Is obesity a risk factor for wheezing among adolescents?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23448747,test,Do older adults with cancer fall more often?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23568387,test,Is bicompartmental knee arthroplasty more favourable to knee muscle strength and physical performance compared to total knee arthroplasty?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+23677366,test,Do oblique views add value in the diagnosis of spondylolysis in adolescents?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24013712,test,Preoperative platelet count in esophageal squamous cell carcinoma: is it a prognostic factor?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24061619,test,Location and number of sutures placed for hiatal hernia repair during laparoscopic adjustable gastric banding: does it matter?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24139705,test,Telemedicine and type 1 diabetes: is technology per se sufficient to improve glycaemic control?,0.0000,0.0000,1.0000,1.0000,0.0000,0.0000,0.0000,0.1000,0.1000,0.1000,0.0000
+24191126,test,Is CA72-4 a useful biomarker in differential diagnosis between ovarian endometrioma and epithelial ovarian cancer?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24352924,test,Is portable ultrasonography accurate in the evaluation of Schanz pin placement during extremity fracture fixation in austere environments?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24449622,test,Is there a relationship between serum paraoxonase level and epicardial fat tissue thickness?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24614789,test,Is lumbar drainage of postoperative cerebrospinal fluid fistula after spine surgery effective?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24666444,test,"Is there any evidence of a ""July effect"" in patients undergoing major cancer surgery?",1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+24809662,test,Does concomitant anterior/apical repair during midurethral sling improve the overactive bladder component of mixed incontinence?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25007420,test,Are there mental health differences between francophone and non-francophone populations in manitoba?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25103647,test,Does government assistance improve utilization of eye care services by low-income individuals?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25280365,test,Reporting and interpreting red blood cell morphology: is there discordance between clinical pathologists and clinicians?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25499207,test,Is neck pain associated with worse health-related quality of life 6 months later?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25604390,test,Aberrant loss of dickkopf-3 in gastric cancer: can it predict lymph node metastasis preoperatively?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25669733,test,Can distal ureteral diameter predict reflux resolution after endoscopic injection?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25675614,test,Can gingival crevicular blood be relied upon for assessment of blood glucose level?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25756710,test,Can emergency physicians accurately and reliably assess acute vertigo in the emergency department?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25793749,test,Do Web-based and clinic samples of gay men living with HIV differ on self-reported physical and psychological symptoms?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+25940336,test,Does Residency Selection Criteria Predict Performance in Orthopaedic Surgery Residency?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26209118,test,Utility of unenhanced fat-suppressed T1-weighted MRI in children with sickle cell disease -- can it differentiate bone infarcts from acute osteomyelitis?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26536001,test,Is There an Additional Value of Using Somatostatin Receptor Subtype 2a Immunohistochemistry Compared to Somatostatin Receptor Scintigraphy Uptake in Predicting Gastroenteropancreatic Neuroendocrine Tumor Response?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26578404,test,Patient-Controlled Therapy of Breathlessness in Palliative Care: A New Therapeutic Concept for Opioid Administration?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26778755,test,Vaginal dose assessment in image-guided brachytherapy for cervical cancer: Can we really rely on dose-point evaluation?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26879871,test,Does depression diagnosis and antidepressant prescribing vary by location?,1.0000,1.0000,0.5000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+26923375,test,Is non-invasive diagnosis of esophageal varices in patients with compensated hepatic cirrhosis possible by duplex Doppler ultrasonography?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27096199,test,Does Viral Co-Infection Influence the Severity of Acute Respiratory Infection in Children?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27131771,test,Does left atrial appendage (LAA) occlusion device alter the echocardiography and electrocardiogram parameters in patients with atrial fibrillation?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27281318,test,Can Flexible Instruments Create Adequate Femoral Tunnel Lengths at 90° of Knee Flexion in Anterior Cruciate Ligament Reconstruction?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27287237,test,Assessment of appropriate antimicrobial prescribing: do experts agree?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27592038,test,Does multi-modal cervical physical therapy improve tinnitus in patients with cervicogenic somatic tinnitus?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+27818079,test,Is the Retromandibular Transparotid Approach a Reliable Option for the Surgical Treatment of Condylar Fractures?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+28056802,test,Is non-HDL-cholesterol a better predictor of long-term outcome in patients after acute myocardial infarction compared to LDL-cholesterol?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+7497757,test,Cardiopulmonary bypass temperature does not affect postoperative euthyroid sick syndrome?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8165771,test,Ultrasound in squamous cell carcinoma of the penis; a useful addition to clinical staging?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8199520,test,Are physicians meeting the needs of family caregivers of the frail elderly?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8521557,test,The insertion allele of the ACE gene I/D polymorphism. A candidate gene for insulin resistance?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8847047,test,Prognosis of well differentiated small hepatocellular carcinoma--is well differentiated hepatocellular carcinoma clinically early cancer?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+8916748,test,Do socioeconomic differences in mortality persist after retirement?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+9465206,test,"""Occult"" posttraumatic lesions of the knee: can magnetic resonance substitute for diagnostic arthroscopy?",1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+9542484,test,Does successful completion of the Perinatal Education Programme result in improved obstetric practice?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000
+9582182,test,Does the SCL 90-R obsessive-compulsive dimension identify cognitive impairments?,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000,1.0000

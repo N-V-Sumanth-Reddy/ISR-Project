@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Policy & Declined out-of-collection & Declined answerable & F1 \\
+\midrule
+PubMedQA: LLM declines & 26 / 30 (86.7\%) & 2 / 100 (2.0\%) & 0.90 \\
+PubMedQA: Score threshold & 29 / 30 (96.7\%) & 8 / 100 (8.0\%) & 0.87 \\
+PubMedQA: Both (system) & 30 / 30 (100.0\%) & 9 / 100 (9.0\%) & 0.87 \\
+PubMedQA: closed-book says it does not know & 3.3\% & 3.0\% & -- \\
+\midrule
+Handbook: LLM declines & 9 / 10 (90.0\%) & 0 / 25 (0.0\%) & 0.95 \\
+Handbook: Score threshold & 10 / 10 (100.0\%) & 6 / 25 (24.0\%) & 0.77 \\
+Handbook: Both (system) & 10 / 10 (100.0\%) & 6 / 25 (24.0\%) & 0.77 \\
+Handbook: closed-book says it does not know & 80.0\% & 36.0\% & -- \\
+\bottomrule
+\end{tabular}
+\caption{Abstention. Left: out-of-collection questions correctly declined (abstention accuracy). Right: answerable questions wrongly declined (over-refusal). The score threshold uses the signal ce\_top with threshold 1.8739, both chosen on the PubMedQA dev questions and transferred unchanged to the handbook.}
+\label{tab:abstention}
+\end{table*}

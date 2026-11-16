@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Retrieval mode & gold in top-k \% & accuracy \% & coverage \% & declined out-of-coll. \% & utility \% \\
+\midrule
+BM25 & 99.0 & \textbf{81.0} & 98.0 & 83.3 & 81.5 \\
+Dense & \textbf{100.0} & 80.0 & 97.0 & 80.0 & 80.0 \\
+Hybrid (RRF) & 99.0 & \textbf{81.0} & 98.0 & 86.7 & \textbf{82.3} \\
+Hybrid + re-ranker & 99.0 & 78.0 & 98.0 & 80.0 & 78.5 \\
+Hybrid + entity graph & 99.0 & \textbf{81.0} & 98.0 & 80.0 & 80.8 \\
+\bottomrule
+\end{tabular}
+\caption{End-to-end effect of the retrieval mode on PubMedQA test answers (generator llama3.1:8b, top-k = 3, LLM abstention only).}
+\label{tab:ablation_modes}
+\end{table*}

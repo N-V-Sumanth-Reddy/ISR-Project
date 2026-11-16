@@ -1,0 +1,263 @@
+{
+  "bench": "handbook",
+  "n_test_answerable": 25,
+  "n_test_unanswerable": 10,
+  "top_k": 3,
+  "settings": {
+    "mode": "hybrid",
+    "rerank": false,
+    "kg": false
+  },
+  "generator_model": "llama3.1:8b",
+  "judge_model": "qwen2.5:7b",
+  "abstention_signal": "ce_top",
+  "abstention_threshold": 1.8738980293273926,
+  "primary_policy": "combined",
+  "tuning_source": "transferred",
+  "collection": {
+    "name": "handbook",
+    "n_documents": 12,
+    "n_passages": 25,
+    "chunk_words": 200
+  },
+  "retrieval": {
+    "gold_in_top_k": 1.0,
+    "gold_at_rank_1": 1.0,
+    "gold_in_top_10": 1.0
+  },
+  "judge": {
+    "n": 25,
+    "rag_wins": 14,
+    "closed_book_wins": 0,
+    "ties": 11,
+    "rag_win_rate": 0.56,
+    "closed_book_win_rate": 0.0,
+    "tie_rate": 0.44,
+    "rag_win_rate_ci": [
+      0.37067017019564436,
+      0.7333462505299744
+    ],
+    "sign_test_p": 0.0001220703125,
+    "rag_share_of_decided": 1.0,
+    "position_consistency": 0.68,
+    "unparsed_judgments": 0,
+    "when_rag_answered": {
+      "n": 19,
+      "rag_wins": 11,
+      "closed_book_wins": 0,
+      "ties": 8
+    }
+  },
+  "post_check": {
+    "n_answers": 19,
+    "n_sentences": 42,
+    "answers_with_invalid_citation": 0.05263157894736842,
+    "answers_with_no_citation": 0.0,
+    "uncited_sentence_rate": 0.16666666666666666,
+    "answers_with_unsupported_number": 0.21052631578947367,
+    "mean_citations_per_answer": 1.105263157894737,
+    "cites_gold_document": 1.0
+  },
+  "citation": {
+    "n_answers": 19,
+    "n_statements": 42,
+    "n_citations": 36,
+    "n_skipped_labels": 0,
+    "citation_recall_micro": 0.7142857142857143,
+    "citation_precision_micro": 0.8333333333333334,
+    "citation_recall_macro": 0.7105263157894736,
+    "citation_precision_macro": 0.8333333333333333,
+    "backend": "nli:cross-encoder/nli-deberta-v3-base",
+    "nli_window": 2
+  },
+  "faithfulness": {
+    "n": 19,
+    "mean": 0.9078947368421053,
+    "fully_faithful_rate": 0.7894736842105263,
+    "n_claims": 43,
+    "answerable_mean": 0.9078947368421053,
+    "out_of_collection_mean": null
+  },
+  "abstention": {
+    "signal": "ce_top",
+    "threshold_value": 1.8738980293273926,
+    "primary_policy": "combined",
+    "llm": {
+      "n_unanswerable": 10,
+      "n_answerable": 25,
+      "abstained_unanswerable": 9,
+      "abstained_answerable": 0,
+      "abstention_accuracy": 0.9,
+      "over_refusal_rate": 0.0,
+      "abstention_precision": 1.0,
+      "abstention_f1": 0.9473684210526316,
+      "overall_accuracy": 0.9714285714285714,
+      "abstention_accuracy_ci": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "over_refusal_ci": [
+        0.0,
+        0.13319649395317873
+      ]
+    },
+    "threshold": {
+      "n_unanswerable": 10,
+      "n_answerable": 25,
+      "abstained_unanswerable": 10,
+      "abstained_answerable": 6,
+      "abstention_accuracy": 1.0,
+      "over_refusal_rate": 0.24,
+      "abstention_precision": 0.625,
+      "abstention_f1": 0.7692307692307693,
+      "overall_accuracy": 0.8285714285714286,
+      "abstention_accuracy_ci": [
+        0.7224598312333834,
+        1.0
+      ],
+      "over_refusal_ci": [
+        0.11496157730326725,
+        0.43430059955238565
+      ]
+    },
+    "combined": {
+      "n_unanswerable": 10,
+      "n_answerable": 25,
+      "abstained_unanswerable": 10,
+      "abstained_answerable": 6,
+      "abstention_accuracy": 1.0,
+      "over_refusal_rate": 0.24,
+      "abstention_precision": 0.625,
+      "abstention_f1": 0.7692307692307693,
+      "overall_accuracy": 0.8285714285714286,
+      "abstention_accuracy_ci": [
+        0.7224598312333834,
+        1.0
+      ],
+      "over_refusal_ci": [
+        0.11496157730326725,
+        0.43430059955238565
+      ]
+    },
+    "over_refusal_when_gold_retrieved": 0.24,
+    "refusal_when_gold_missed": null,
+    "n_gold_missed": 0,
+    "closed_book_refusal_unanswerable": 0.8,
+    "closed_book_refusal_answerable": 0.36,
+    "signal_test_auroc": {
+      "dense_top": 0.8,
+      "rrf_top": 0.702,
+      "bm25_top": 0.836,
+      "ce_top": 0.964,
+      "overlap10": 0.65
+    },
+    "signal_test_at_dev_threshold": {
+      "dense_top": {
+        "threshold": 0.6399204730987549,
+        "n_answerable": 25,
+        "n_unanswerable": 10,
+        "n_caught": 10,
+        "n_refused": 19,
+        "caught": 1.0,
+        "refused": 0.76,
+        "caught_ci": [
+          0.7224598312333834,
+          1.0
+        ],
+        "refused_ci": [
+          0.5656994004476144,
+          0.8850384226967327
+        ]
+      },
+      "rrf_top": {
+        "threshold": 0.032654680063458494,
+        "n_answerable": 25,
+        "n_unanswerable": 10,
+        "n_caught": 5,
+        "n_refused": 3,
+        "caught": 0.5,
+        "refused": 0.12,
+        "caught_ci": [
+          0.23658959361548731,
+          0.7634104063845126
+        ],
+        "refused_ci": [
+          0.04166741357068093,
+          0.2995619218337349
+        ]
+      },
+      "bm25_top": {
+        "threshold": 18.86752414703369,
+        "n_answerable": 25,
+        "n_unanswerable": 10,
+        "n_caught": 10,
+        "n_refused": 25,
+        "caught": 1.0,
+        "refused": 1.0,
+        "caught_ci": [
+          0.7224598312333834,
+          1.0
+        ],
+        "refused_ci": [
+          0.8668035060468213,
+          1.0
+        ]
+      },
+      "ce_top": {
+        "threshold": 1.8738980293273926,
+        "n_answerable": 25,
+        "n_unanswerable": 10,
+        "n_caught": 10,
+        "n_refused": 6,
+        "caught": 1.0,
+        "refused": 0.24,
+        "caught_ci": [
+          0.7224598312333834,
+          1.0
+        ],
+        "refused_ci": [
+          0.11496157730326725,
+          0.43430059955238565
+        ]
+      },
+      "overlap10": {
+        "threshold": 0.05,
+        "n_answerable": 25,
+        "n_unanswerable": 10,
+        "n_caught": 0,
+        "n_refused": 0,
+        "caught": 0.0,
+        "refused": 0.0,
+        "caught_ci": [
+          0.0,
+          0.2775401687666166
+        ],
+        "refused_ci": [
+          0.0,
+          0.13319649395317873
+        ]
+      }
+    }
+  },
+  "latency": {
+    "rag_seconds_mean": 0.44197962624686105,
+    "closed_book_seconds_mean": 0.4359887599945068,
+    "rag_prompt_tokens_mean": 814.8571428571429,
+    "rag_completion_tokens_mean": 34.42857142857143,
+    "retrieval_seconds_mean": 0.002355732236589704
+  },
+  "failures": {
+    "ok": 9,
+    "citation_problem": 10,
+    "over_refusal": 6,
+    "correct_abstention": 10
+  },
+  "failures_answerable": {
+    "ok": 9,
+    "citation_problem": 10,
+    "over_refusal": 6
+  },
+  "failures_out_of_collection": {
+    "correct_abstention": 10
+  }
+}

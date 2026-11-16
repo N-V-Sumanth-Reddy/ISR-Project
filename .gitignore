@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+config.local.yaml
+
+# downloaded data and built indexes (reproducible with run_all.sh)
+data/trec-covid/
+data/trec-covid.zip
+data/pubmedqa/
+indexes/
+indexes_smoke/
+
+# smoke-test output and caches; keep results/ itself so the numbers are versioned
+results_smoke/
+results/cache/
+results/*.log
+
+# LaTeX build files
+report/*.aux
+report/*.bbl
+report/*.blg
+report/*.log
+report/*.out
+report/main.pdf
+tests/_tiny_models/
+.DS_Store
+
+# notes for Claude about a teammate's GPU machine; keep local
+CLAUDE.md

@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{llrrr}
+\toprule
+A & B & $\Delta$ nDCG@10 & wins / losses & p \\
+\midrule
+Hybrid RRF (BM25 + MiniLM-L6) & BM25 (tuned on dev) & +0.078 & 20 / 11 & 0.009 \\
+Hybrid RRF (BM25 + MiniLM-L6) & Dense (MiniLM-L6) & +0.122 & 22 / 12 & <0.001 \\
+Hybrid (BM25 + MiniLM-L6) + re-ranker & Hybrid RRF (BM25 + MiniLM-L6) & +0.071 & 25 / 6 & 0.027 \\
+BM25 + re-ranker & BM25 (tuned on dev) & +0.129 & 22 / 10 & 0.002 \\
+Hybrid + entity graph & Hybrid RRF (BM25 + MiniLM-L6) & +0.009 & 13 / 11 & 0.280 \\
+Weighted score fusion (tuned) & Hybrid RRF (BM25 + MiniLM-L6) & -0.055 & 12 / 19 & 0.014 \\
+Dynamic alpha (DAT-style) & Hybrid RRF (BM25 + MiniLM-L6) & -0.050 & 13 / 18 & 0.070 \\
+BM25 (tuned on dev) & BM25 (default $k_1$=0.9, $b$=0.4) & +0.032 & 18 / 14 & 0.064 \\
+Hybrid RRF (BM25 + bge-small) & BM25 (tuned on dev) & +0.168 & 29 / 3 & <0.001 \\
+Hybrid RRF (BM25 + bge-small) & Dense (bge-small) & -0.001 & 16 / 17 & 0.957 \\
+Hybrid (BM25 + bge-small) + re-ranker & Hybrid RRF (BM25 + bge-small) & +0.025 & 16 / 16 & 0.308 \\
+\bottomrule
+\end{tabular}
+\caption{Paired comparisons on the TREC-COVID test topics (nDCG@10): mean difference A $-$ B, topics won / lost by A, and the two-sided paired randomisation test.}
+\label{tab:retrieval_tests}
+\end{table*}

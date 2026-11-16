@@ -1,0 +1,313 @@
+{
+  "bench": "pubmedqa",
+  "n_test_answerable": 100,
+  "n_test_unanswerable": 30,
+  "top_k": 3,
+  "settings": {
+    "mode": "hybrid",
+    "rerank": false,
+    "kg": false
+  },
+  "generator_model": "llama3.1:8b",
+  "judge_model": "qwen2.5:7b",
+  "abstention_signal": "ce_top",
+  "abstention_threshold": 1.8738980293273926,
+  "primary_policy": "combined",
+  "tuning_source": "dev",
+  "collection": {
+    "name": "pubmedqa",
+    "n_documents": 950,
+    "n_passages": 1429,
+    "chunk_words": 200
+  },
+  "retrieval": {
+    "gold_in_top_k": 0.99,
+    "gold_at_rank_1": 0.98,
+    "gold_in_top_10": 0.99
+  },
+  "judge": {
+    "n": 100,
+    "rag_wins": 40,
+    "closed_book_wins": 8,
+    "ties": 52,
+    "rag_win_rate": 0.4,
+    "closed_book_win_rate": 0.08,
+    "tie_rate": 0.52,
+    "rag_win_rate_ci": [
+      0.3093997461136028,
+      0.4979992153815976
+    ],
+    "sign_test_p": 3.305266709219268e-06,
+    "rag_share_of_decided": 0.8333333333333334,
+    "position_consistency": 0.67,
+    "unparsed_judgments": 0,
+    "when_rag_answered": {
+      "n": 91,
+      "rag_wins": 39,
+      "closed_book_wins": 3,
+      "ties": 49
+    }
+  },
+  "decision_accuracy": {
+    "n": 100,
+    "closed_book": {
+      "accuracy": 0.6,
+      "ci": [
+        0.5020007846184025,
+        0.6906002538863971
+      ],
+      "no_decision": 3
+    },
+    "rag": {
+      "accuracy": 0.76,
+      "ci": [
+        0.6676748127670786,
+        0.8330878873454004
+      ],
+      "coverage": 0.91,
+      "accuracy_when_answered": 0.8351648351648352,
+      "no_decision": 0
+    },
+    "mcnemar": {
+      "rag_only_correct": 23,
+      "closed_book_only_correct": 7,
+      "p": 0.005222879350185394
+    },
+    "by_label": {
+      "maybe": {
+        "n": 7,
+        "closed_book": 0.0,
+        "rag": 0.0
+      },
+      "no": {
+        "n": 32,
+        "closed_book": 0.1875,
+        "rag": 0.75
+      },
+      "yes": {
+        "n": 61,
+        "closed_book": 0.8852459016393442,
+        "rag": 0.8524590163934426
+      }
+    },
+    "majority_baseline": 0.61
+  },
+  "post_check": {
+    "n_answers": 91,
+    "n_sentences": 208,
+    "answers_with_invalid_citation": 0.0,
+    "answers_with_no_citation": 0.0,
+    "uncited_sentence_rate": 0.2548076923076923,
+    "answers_with_unsupported_number": 0.03296703296703297,
+    "mean_citations_per_answer": 1.2307692307692308,
+    "cites_gold_document": 1.0
+  },
+  "citation": {
+    "n_answers": 91,
+    "n_statements": 168,
+    "n_citations": 129,
+    "n_skipped_labels": 40,
+    "citation_recall_micro": 0.3630952380952381,
+    "citation_precision_micro": 0.5116279069767442,
+    "citation_recall_macro": 0.3611721611721611,
+    "citation_precision_macro": 0.5151515151515151,
+    "backend": "nli:cross-encoder/nli-deberta-v3-base",
+    "nli_window": 2
+  },
+  "faithfulness": {
+    "n": 91,
+    "mean": 0.9086080586080586,
+    "fully_faithful_rate": 0.7362637362637363,
+    "n_claims": 306,
+    "answerable_mean": 0.9086080586080586,
+    "out_of_collection_mean": null
+  },
+  "abstention": {
+    "signal": "ce_top",
+    "threshold_value": 1.8738980293273926,
+    "primary_policy": "combined",
+    "llm": {
+      "n_unanswerable": 30,
+      "n_answerable": 100,
+      "abstained_unanswerable": 26,
+      "abstained_answerable": 2,
+      "abstention_accuracy": 0.8666666666666667,
+      "over_refusal_rate": 0.02,
+      "abstention_precision": 0.9285714285714286,
+      "abstention_f1": 0.896551724137931,
+      "overall_accuracy": 0.9538461538461539,
+      "abstention_accuracy_ci": [
+        0.7031831605558306,
+        0.9469043057578189
+      ],
+      "over_refusal_ci": [
+        0.005501852234968185,
+        0.07001316294199365
+      ]
+    },
+    "threshold": {
+      "n_unanswerable": 30,
+      "n_answerable": 100,
+      "abstained_unanswerable": 29,
+      "abstained_answerable": 8,
+      "abstention_accuracy": 0.9666666666666667,
+      "over_refusal_rate": 0.08,
+      "abstention_precision": 0.7837837837837838,
+      "abstention_f1": 0.8656716417910447,
+      "overall_accuracy": 0.9307692307692308,
+      "abstention_accuracy_ci": [
+        0.8332924860304112,
+        0.9940915620051425
+      ],
+      "over_refusal_ci": [
+        0.04109296948581091,
+        0.14998266879403072
+      ]
+    },
+    "combined": {
+      "n_unanswerable": 30,
+      "n_answerable": 100,
+      "abstained_unanswerable": 30,
+      "abstained_answerable": 9,
+      "abstention_accuracy": 1.0,
+      "over_refusal_rate": 0.09,
+      "abstention_precision": 0.7692307692307693,
+      "abstention_f1": 0.8695652173913044,
+      "overall_accuracy": 0.9307692307692308,
+      "abstention_accuracy_ci": [
+        0.8864829086095221,
+        1.0
+      ],
+      "over_refusal_ci": [
+        0.04807199516388488,
+        0.16226374696643667
+      ]
+    },
+    "over_refusal_when_gold_retrieved": 0.08080808080808081,
+    "refusal_when_gold_missed": 1.0,
+    "n_gold_missed": 1,
+    "closed_book_refusal_unanswerable": 0.03333333333333333,
+    "closed_book_refusal_answerable": 0.03,
+    "signal_test_auroc": {
+      "dense_top": 0.9596666666666667,
+      "rrf_top": 0.7761666666666667,
+      "bm25_top": 0.9193333333333333,
+      "ce_top": 0.986,
+      "overlap10": 0.633
+    },
+    "signal_test_at_dev_threshold": {
+      "dense_top": {
+        "threshold": 0.6399204730987549,
+        "n_answerable": 100,
+        "n_unanswerable": 30,
+        "n_caught": 28,
+        "n_refused": 15,
+        "caught": 0.9333333333333333,
+        "refused": 0.15,
+        "caught_ci": [
+          0.7867618227892791,
+          0.9815233646723066
+        ],
+        "refused_ci": [
+          0.09305903191162297,
+          0.23283733332157835
+        ]
+      },
+      "rrf_top": {
+        "threshold": 0.032654680063458494,
+        "n_answerable": 100,
+        "n_unanswerable": 30,
+        "n_caught": 19,
+        "n_refused": 13,
+        "caught": 0.6333333333333333,
+        "refused": 0.13,
+        "caught_ci": [
+          0.45513246433604937,
+          0.7812629779598231
+        ],
+        "refused_ci": [
+          0.07757093858414264,
+          0.20980521894809878
+        ]
+      },
+      "bm25_top": {
+        "threshold": 18.86752414703369,
+        "n_answerable": 100,
+        "n_unanswerable": 30,
+        "n_caught": 19,
+        "n_refused": 8,
+        "caught": 0.6333333333333333,
+        "refused": 0.08,
+        "caught_ci": [
+          0.45513246433604937,
+          0.7812629779598231
+        ],
+        "refused_ci": [
+          0.04109296948581091,
+          0.14998266879403072
+        ]
+      },
+      "ce_top": {
+        "threshold": 1.8738980293273926,
+        "n_answerable": 100,
+        "n_unanswerable": 30,
+        "n_caught": 29,
+        "n_refused": 8,
+        "caught": 0.9666666666666667,
+        "refused": 0.08,
+        "caught_ci": [
+          0.8332924860304112,
+          0.9940915620051425
+        ],
+        "refused_ci": [
+          0.04109296948581091,
+          0.14998266879403072
+        ]
+      },
+      "overlap10": {
+        "threshold": 0.05,
+        "n_answerable": 100,
+        "n_unanswerable": 30,
+        "n_caught": 3,
+        "n_refused": 0,
+        "caught": 0.1,
+        "refused": 0.0,
+        "caught_ci": [
+          0.03459925995971615,
+          0.25621441315266624
+        ],
+        "refused_ci": [
+          0.0,
+          0.03699480747600191
+        ]
+      }
+    }
+  },
+  "latency": {
+    "rag_seconds_mean": 0.6180341995679415,
+    "closed_book_seconds_mean": 0.49474424582261306,
+    "rag_prompt_tokens_mean": 938.5769230769231,
+    "rag_completion_tokens_mean": 51.46153846153846,
+    "retrieval_seconds_mean": 0.002573218712439904
+  },
+  "failures": {
+    "ok": 14,
+    "wrong_conclusion": 15,
+    "citation_problem": 60,
+    "over_refusal": 8,
+    "unfaithful": 2,
+    "retrieval_miss": 1,
+    "correct_abstention": 30
+  },
+  "failures_answerable": {
+    "ok": 14,
+    "wrong_conclusion": 15,
+    "citation_problem": 60,
+    "over_refusal": 8,
+    "unfaithful": 2,
+    "retrieval_miss": 1
+  },
+  "failures_out_of_collection": {
+    "correct_abstention": 30
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "dataset": "pubmedqa",
+  "generator": "llama3.1:8b",
+  "policy": "LLM abstention only",
+  "rows": [
+    {
+      "mode": "BM25",
+      "top_k": 3,
+      "gold_in_top_k": 0.99,
+      "decision_accuracy": 0.81,
+      "coverage": 0.98,
+      "abstention_accuracy": 0.8333333333333334,
+      "utility": 0.8153846153846154,
+      "n_answerable": 100,
+      "n_out_of_collection": 30
+    },
+    {
+      "mode": "Dense",
+      "top_k": 3,
+      "gold_in_top_k": 1.0,
+      "decision_accuracy": 0.8,
+      "coverage": 0.97,
+      "abstention_accuracy": 0.8,
+      "utility": 0.8,
+      "n_answerable": 100,
+      "n_out_of_collection": 30
+    },
+    {
+      "mode": "Hybrid (RRF)",
+      "top_k": 3,
+      "gold_in_top_k": 0.99,
+      "decision_accuracy": 0.81,
+      "coverage": 0.98,
+      "abstention_accuracy": 0.8666666666666667,
+      "utility": 0.823076923076923,
+      "n_answerable": 100,
+      "n_out_of_collection": 30
+    },
+    {
+      "mode": "Hybrid + re-ranker",
+      "top_k": 3,
+      "gold_in_top_k": 0.99,
+      "decision_accuracy": 0.78,
+      "coverage": 0.98,
+      "abstention_accuracy": 0.8,
+      "utility": 0.7846153846153846,
+      "n_answerable": 100,
+      "n_out_of_collection": 30
+    },
+    {
+      "mode": "Hybrid + entity graph",
+      "top_k": 3,
+      "gold_in_top_k": 0.99,
+      "decision_accuracy": 0.81,
+      "coverage": 0.98,
+      "abstention_accuracy": 0.8,
+      "utility": 0.8076923076923077,
+      "n_answerable": 100,
+      "n_out_of_collection": 30
+    }
+  ]
+}

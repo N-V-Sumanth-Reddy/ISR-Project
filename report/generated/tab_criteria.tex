@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{p{0.40\textwidth}p{0.09\textwidth}p{0.43\textwidth}}
+\toprule
+Success criterion (proposal) & Outcome & Evidence \\
+\midrule
+Hybrid matches or beats the better single retriever on nDCG@10 (TREC-COVID test topics) & \textbf{met} & hybrid 0.698 vs. BM25 0.620 (BM25 0.620, dense 0.576) \\
+RAG wins most pairwise comparisons against the closed-book LLM (PubMedQA) & \textbf{partly met} & RAG wins 40, ties 52, closed-book wins 8 of 100 (sign test, p < 0.001) \\
+Abstention catches most out-of-collection questions without over-refusing (PubMedQA; operationalised as more than half caught and at most 10\% of answerable questions refused) & \textbf{met} & 30 of 30 out-of-collection questions declined (100.0\%); 9 of 100 answerable questions declined (9.0\%) \\
+\bottomrule
+\end{tabular}
+\caption{The three success criteria stated in the proposal, checked against the results.}
+\label{tab:criteria}
+\end{table*}

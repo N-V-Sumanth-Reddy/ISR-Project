@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{0.46\linewidth}rr}
+\toprule
+Metric & PubMedQA & Handbook \\
+\midrule
+Answers evaluated & 91 & 19 \\
+Citation precision (ALCE-style) \% & 51.2 & 83.3 \\
+Citation recall (ALCE-style) \% & 36.3 & 71.4 \\
+Faithfulness (RAGAs-style) \% & 90.9 & 90.8 \\
+Fully faithful answers \% & 73.6 & 78.9 \\
+Answers citing the gold document \% & 100.0 & 100.0 \\
+Answers with an invalid citation number \% & 0.0 & 5.3 \\
+Sentences without a citation \% & 25.5 & 16.7 \\
+Answers with a number absent from cited passages \% & 3.3 & 21.1 \\
+Citations per answer & 1.23 & 1.11 \\
+\bottomrule
+\end{tabular}
+\caption{Groundedness of the RAG answers that were not declined. Citation precision / recall use entailment by DeBERTa-v3 NLI on windows of 2 consecutive passage sentences (maximum over windows); a bare Yes / No / Maybe sentence is not scored. Faithfulness is the share of atomic claims the judge model finds supported by the retrieved passages.}
+\label{tab:grounding}
+\end{table}

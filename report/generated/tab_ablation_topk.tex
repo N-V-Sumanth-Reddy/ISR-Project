@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+top-k & gold in top-k \% & answerable correct \% & declined \% & utility \% & prompt tokens & s / answer \\
+\midrule
+k = 3 * & 100.0 & 75.0 & 80.0 & 76.7 & 938 & 0.6 \\
+k = 5 & 100.0 & 75.0 & 80.0 & 76.7 & 1412 & 0.7 \\
+k = 8 & 100.0 & 72.5 & 80.0 & 75.0 & 2125 & 0.8 \\
+\bottomrule
+\end{tabular}
+\caption{Number of passages given to the LLM (PubMedQA dev, 60 questions). 'Answerable correct' requires an answer with the right yes / no / maybe label; 'declined' is the share of out-of-collection questions the LLM refused; utility is the share of all dev questions handled correctly. * marks the value used on test.}
+\label{tab:ablation_topk}
+\end{table*}

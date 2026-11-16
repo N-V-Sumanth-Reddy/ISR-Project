@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Passage words & passages & BM25 nDCG@10 & Dense nDCG@10 & Hybrid nDCG@10 & Hybrid R@100 \\
+\midrule
+100 (overlap 20) & 395,348 & 0.590 & \textbf{0.637} & \textbf{0.727} & \textbf{0.110} \\
+200 (overlap 40) & 238,432 & 0.620 & 0.576 & 0.698 & 0.103 \\
+400 (overlap 80) & 174,085 & \textbf{0.641} & 0.520 & 0.685 & 0.105 \\
+\bottomrule
+\end{tabular}
+\caption{Chunk size ablation on TREC-COVID (35 test topics, dense model MiniLM-L6).}
+\label{tab:ablation_chunk_trec}
+\end{table*}

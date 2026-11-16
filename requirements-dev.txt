@@ -1,0 +1,6 @@
+# Tests, and optional cross-checks of the BM25 / metric implementations
+-r requirements.txt
+pytest>=8.0
+rank_bm25>=0.2.2
+pytrec_eval-terrier>=0.5.6
+reportlab>=4.0          # only to regenerate the two demo PDFs

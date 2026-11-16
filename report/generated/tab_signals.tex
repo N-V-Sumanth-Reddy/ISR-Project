@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Signal & AUROC dev & AUROC test & caught dev & refused dev & caught test & refused test \\
+\midrule
+Top dense cosine similarity & 0.976 & 0.960 & 100.0 & 5.0 & 93.3 & 15.0 \\
+Top RRF score (as proposed) & 0.786 & 0.776 & 60.0 & 5.0 & 63.3 & 13.0 \\
+Top BM25 score & 0.941 & 0.919 & 85.0 & 2.5 & 63.3 & 8.0 \\
+Top cross-encoder score * & \textbf{0.984} & \textbf{0.986} & 95.0 & 5.0 & 96.7 & 8.0 \\
+BM25 / dense top-10 overlap & 0.566 & 0.633 & 10.0 & 0.0 & 10.0 & 0.0 \\
+\bottomrule
+\end{tabular}
+\caption{Retrieval-confidence signals for abstention on PubMedQA. AUROC measures how well each signal separates answerable from out-of-collection questions. Each signal gets its own threshold, tuned on the dev questions (20 out-of-collection and 40 answerable); the last four columns give the percentage of out-of-collection questions that threshold catches and of answerable questions it wrongly refuses, on dev and when applied unchanged to the held-out test questions (30 out-of-collection and 100 answerable). * marks the signal used by the system.}
+\label{tab:signals}
+\end{table*}

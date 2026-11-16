@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Passage words & passages & BM25 MRR@10 & Dense MRR@10 & Hybrid MRR@10 & Hybrid R@1 & Hybrid R@5 \\
+\midrule
+50 (overlap 10) & 5,250 & 0.966 & \textbf{0.990} & 0.985 & 0.980 & \textbf{0.990} \\
+100 (overlap 20) & 2,636 & \textbf{0.985} & \textbf{0.990} & \textbf{0.990} & \textbf{0.990} & \textbf{0.990} \\
+200 (overlap 40) & 1,429 & 0.980 & \textbf{0.990} & 0.985 & 0.980 & \textbf{0.990} \\
+400 (overlap 80) & 950 & 0.980 & \textbf{0.990} & 0.985 & 0.980 & \textbf{0.990} \\
+\bottomrule
+\end{tabular}
+\caption{Chunk size ablation on PubMedQA known-item retrieval (100 test questions, dense model MiniLM-L6).}
+\label{tab:ablation_chunk}
+\end{table*}

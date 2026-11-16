@@ -1,0 +1,99 @@
+{
+  "dataset": "pubmedqa",
+  "n_queries": 100,
+  "dense_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rows": [
+    {
+      "chunk_words": 50,
+      "overlap_words": 10,
+      "n_passages": 5250,
+      "mean_passage_words": 37.20914285714286,
+      "systems": {
+        "bm25": {
+          "recall@1": 0.95,
+          "recall@5": 0.98,
+          "mrr@10": 0.9664285714285714
+        },
+        "dense": {
+          "recall@1": 0.98,
+          "recall@5": 1.0,
+          "mrr@10": 0.99
+        },
+        "hybrid": {
+          "recall@1": 0.98,
+          "recall@5": 0.99,
+          "mrr@10": 0.985
+        }
+      }
+    },
+    {
+      "chunk_words": 100,
+      "overlap_words": 20,
+      "n_passages": 2636,
+      "mean_passage_words": 77.06297420333838,
+      "systems": {
+        "bm25": {
+          "recall@1": 0.98,
+          "recall@5": 0.99,
+          "mrr@10": 0.985
+        },
+        "dense": {
+          "recall@1": 0.98,
+          "recall@5": 1.0,
+          "mrr@10": 0.99
+        },
+        "hybrid": {
+          "recall@1": 0.99,
+          "recall@5": 0.99,
+          "mrr@10": 0.99
+        }
+      }
+    },
+    {
+      "chunk_words": 200,
+      "overlap_words": 40,
+      "n_passages": 1429,
+      "mean_passage_words": 141.78446466060183,
+      "systems": {
+        "bm25": {
+          "recall@1": 0.97,
+          "recall@5": 0.99,
+          "mrr@10": 0.98
+        },
+        "dense": {
+          "recall@1": 0.98,
+          "recall@5": 1.0,
+          "mrr@10": 0.99
+        },
+        "hybrid": {
+          "recall@1": 0.98,
+          "recall@5": 0.99,
+          "mrr@10": 0.985
+        }
+      }
+    },
+    {
+      "chunk_words": 400,
+      "overlap_words": 80,
+      "n_passages": 950,
+      "mean_passage_words": 200.10210526315788,
+      "systems": {
+        "bm25": {
+          "recall@1": 0.97,
+          "recall@5": 0.99,
+          "mrr@10": 0.98
+        },
+        "dense": {
+          "recall@1": 0.98,
+          "recall@5": 1.0,
+          "mrr@10": 0.99
+        },
+        "hybrid": {
+          "recall@1": 0.98,
+          "recall@5": 0.99,
+          "mrr@10": 0.985
+        }
+      }
+    }
+  ]
+}

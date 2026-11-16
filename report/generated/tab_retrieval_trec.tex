@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+System & nDCG@10 & R@100 & R$_{cap}$@100 & nDCG@10 (all) \\
+\midrule
+BM25 (default $k_1$=0.9, $b$=0.4) & 0.587 $\pm$ 0.093 & 0.095 & 0.482 & 0.584 \\
+BM25 (tuned on dev) & 0.620 $\pm$ 0.084 & 0.100 & 0.502 & 0.631 \\
+Dense (MiniLM-L6) & 0.576 $\pm$ 0.090 & 0.093 & 0.451 & 0.576 \\
+Dense (bge-small) & 0.789 $\pm$ 0.056 & \textbf{0.122} & \textbf{0.585} & 0.783 \\
+\midrule
+Hybrid RRF (BM25 + MiniLM-L6) & 0.698 $\pm$ 0.082 & 0.103 & 0.505 & 0.713 \\
+Hybrid RRF (BM25 + bge-small) & 0.788 $\pm$ 0.067 & 0.120 & 0.581 & \textbf{0.785} \\
+\midrule
+BM25 + re-ranker & 0.749 $\pm$ 0.074 & 0.100 & 0.502 & 0.723 \\
+Hybrid (BM25 + MiniLM-L6) + re-ranker & 0.769 $\pm$ 0.066 & 0.103 & 0.505 & 0.747 \\
+Hybrid (BM25 + bge-small) + re-ranker & \textbf{0.812 $\pm$ 0.055} & 0.120 & 0.581 & 0.768 \\
+\midrule
+Weighted score fusion (tuned) & 0.642 $\pm$ 0.086 & 0.103 & 0.505 & 0.655 \\
+\midrule
+Hybrid + entity graph & 0.706 $\pm$ 0.083 & 0.103 & 0.505 & 0.718 \\
+\midrule
+Dynamic alpha (DAT-style) & 0.648 $\pm$ 0.088 & 0.104 & 0.516 & 0.641 \\
+\bottomrule
+\end{tabular}
+\caption{TREC-COVID retrieval. nDCG@10 ($\pm$ half-width of the 95\% bootstrap interval), Recall@100 and capped Recall@100 on the 35 test topics; the last column is nDCG@10 on all 50 topics for comparison with published BEIR numbers (the 15 dev topics were used for tuning).}
+\label{tab:retrieval_trec}
+\end{table*}

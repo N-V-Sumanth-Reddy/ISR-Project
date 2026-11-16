@@ -1,0 +1,14 @@
+{
+  "generator": {
+    "model": "llama3.1:8b",
+    "calls": 0,
+    "cache_hits": 510,
+    "seconds": 0.0
+  },
+  "judge": {
+    "model": "qwen2.5:7b",
+    "calls": 0,
+    "cache_hits": 474,
+    "seconds": 0.0
+  }
+}

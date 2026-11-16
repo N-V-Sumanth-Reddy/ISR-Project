@@ -1,0 +1,48 @@
+{
+  "n_pairs": 165,
+  "nli_model": "cross-encoder/nli-deberta-v3-base",
+  "judge_model": "qwen2.5:7b",
+  "configured_window": 2,
+  "judge_entailed_rate": 0.8424242424242424,
+  "per_bench": {
+    "pubmedqa": 129,
+    "handbook": 36
+  },
+  "windows": {
+    "0": {
+      "entailed_rate": 0.21212121212121213,
+      "agreement": 0.3696969696969697,
+      "kappa": 0.09589041095890413,
+      "nli_yes_when_judge_yes": 0.2517985611510791,
+      "nli_yes_when_judge_no": 0.0
+    },
+    "1": {
+      "entailed_rate": 0.5272727272727272,
+      "agreement": 0.6121212121212121,
+      "kappa": 0.1941391941391941,
+      "nli_yes_when_judge_yes": 0.5827338129496403,
+      "nli_yes_when_judge_no": 0.23076923076923078
+    },
+    "2": {
+      "entailed_rate": 0.5636363636363636,
+      "agreement": 0.6727272727272727,
+      "kappa": 0.282955094157412,
+      "nli_yes_when_judge_yes": 0.6402877697841727,
+      "nli_yes_when_judge_no": 0.15384615384615385
+    },
+    "3": {
+      "entailed_rate": 0.503030303030303,
+      "agreement": 0.6242424242424243,
+      "kappa": 0.2453526113897905,
+      "nli_yes_when_judge_yes": 0.5755395683453237,
+      "nli_yes_when_judge_no": 0.11538461538461539
+    },
+    "4": {
+      "entailed_rate": 0.4666666666666667,
+      "agreement": 0.5757575757575758,
+      "kappa": 0.18856259659969102,
+      "nli_yes_when_judge_yes": 0.5251798561151079,
+      "nli_yes_when_judge_no": 0.15384615384615385
+    }
+  }
+}

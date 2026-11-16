@@ -1,0 +1,19 @@
+\noindent\textbf{Retrieval.} On the 35 TREC-COVID test topics, tuned BM25 reaches nDCG@10 = 0.620, the dense bi-encoder (MiniLM-L6) 0.576, and their reciprocal rank fusion 0.698. Hybrid is above BM25, the better single retriever, by 0.078 (paired randomisation test, p = 0.009; hybrid better on 20 topics, worse on 11). An oracle that picks the better of the two retrievers per topic would reach 0.678, and the two top-10 lists share 7\% of their documents on average.
+
+With the bge-small encoder, dense retrieval reaches nDCG@10 = 0.789 and the hybrid 0.788 (BM25: 0.620).
+
+Re-ranking the top 50 fused documents with the cross-encoder changes hybrid nDCG@10 from 0.698 to 0.769 (+0.071, p = 0.027).
+
+Adding the entity-graph ranker changes hybrid nDCG@10 from 0.698 to 0.706 (+0.009, p = 0.280).
+
+The DAT-style per-query weighting reaches 0.648 against 0.698 for fixed RRF (-0.050, p = 0.070).
+
+\noindent\textbf{Answers.} On the 100 answerable PubMedQA test questions the judge (qwen2.5:7b) preferred the RAG answer 40 times, the closed-book answer 8 times, and found no consistent winner 52 times (two-sided sign test, p < 0.001). When RAG did answer (91 questions) it won 39 and lost 3.
+
+On the yes / no / maybe label, the closed-book llama3.1:8b scores 60.0\% and RAG 76.0\% (majority-class baseline 61.0\%); RAG answered 91.0\% of the questions and was right on 83.5\% of those it answered.
+
+\noindent\textbf{Grounding.} ALCE-style citation precision is 51.2\% and citation recall 36.3\% over 168 statements and 129 citations. RAGAs-style faithfulness averages 90.9\% over 306 claims, and 73.6\% of answers have every claim supported. The post-check found an out-of-range citation number in 0.0\% of answers and no citation on 25.5\% of sentences.
+
+\noindent\textbf{Abstention.} The system declined 30 of 30 out-of-collection questions (100.0\%) and wrongly declined 9 of 100 answerable ones (9.0\%). The LLM's own refusals account for 26 and 2 of these; the rest come from the ce top threshold. The closed-book model said it did not know on 3.3\% of the out-of-collection questions.
+
+\noindent\textbf{Handbook demo set.} Of 25 answerable hand-written questions the system answered 19 (judge: RAG wins 14, ties 11, closed-book wins 0), and it declined 10 of 10 out-of-collection questions. The LLM's own refusals account for 9 and 0 of these; the rest come from the ce top threshold tuned on PubMedQA (with the LLM's refusals alone the system would answer 25 of the 25 answerable questions).

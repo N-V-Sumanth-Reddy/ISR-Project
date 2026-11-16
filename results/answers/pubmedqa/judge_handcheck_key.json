@@ -1,0 +1,252 @@
+{
+ "21342862": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "17691856": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "closed_book"
+ },
+ "22532370": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "26923375": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "14631523": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "15041506": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "25007420": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "15943725": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "21952349": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "25675614": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "14692023": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "24449622": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "19394934": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "12805495": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "15488260": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "23283159": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "22825590": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "14968373": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "19546588": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "27131771": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "25280365": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "22876568": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "closed_book"
+ },
+ "27818079": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "25604390": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "16769333": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "19430778": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "25940336": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "9465206": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "closed_book"
+ },
+ "8847047": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "28056802": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "14627582": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "17274051": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "21074975": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "8916748": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "17276182": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "25756710": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "21214884": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "20602784": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "22680064": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "21394762": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "26578404": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "25499207": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "tie"
+ },
+ "24809662": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "20850631": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "closed_book"
+ },
+ "21252642": {
+  "1": "rag",
+  "2": "closed_book",
+  "judge": "rag"
+ },
+ "8165771": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "18319270": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ },
+ "23677366": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "24191126": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "rag"
+ },
+ "21689015": {
+  "1": "closed_book",
+  "2": "rag",
+  "judge": "tie"
+ }
+}

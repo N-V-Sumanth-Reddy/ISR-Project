@@ -1,0 +1,247 @@
+[
+ {
+  "qid": "hb-a01",
+  "question": "What is the lodging limit per night in high-cost cities?",
+  "reference": "240 dollars per night (the designated high-cost cities are New York, San Francisco, Boston and Washington, D.C.).",
+  "gold_doc": "travel_and_expense_policy.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a02",
+  "question": "How soon after a trip does an expense report have to be submitted?",
+  "reference": "Within 30 days of the end of the trip. Claims after 60 days are reported as taxable income and expenses submitted after 90 days are not reimbursed.",
+  "gold_doc": "travel_and_expense_policy.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a03",
+  "question": "When is premium economy airfare allowed?",
+  "reference": "Only for flights with a scheduled flight time of more than 8 hours.",
+  "gold_doc": "travel_and_expense_policy.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a04",
+  "question": "What is the reimbursement rate for driving a personal vehicle on Institute business?",
+  "reference": "0.62 dollars per mile.",
+  "gold_doc": "travel_and_expense_policy.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a05",
+  "question": "Where must Restricted (Level 4) data be stored?",
+  "reference": "Only in the Vault secure enclave, encrypted at rest with AES-256; not on personal devices and not sent by email.",
+  "gold_doc": "research_data_classification_standard.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a06",
+  "question": "How quickly must a suspected exposure of Confidential data be reported, and to whom?",
+  "reference": "Within 24 hours, to the Information Security Office (security hotline, extension 5-7300).",
+  "gold_doc": "research_data_classification_standard.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a07",
+  "question": "Can I paste confidential research data into a public AI chatbot?",
+  "reference": "No. Confidential and Restricted data may not be entered into externally hosted AI tools; only approved, locally hosted AI tools may be used.",
+  "gold_doc": "research_data_classification_standard.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a08",
+  "question": "How long does research data have to be kept?",
+  "reference": "At least seven years after publication or the end of the project, whichever is later.",
+  "gold_doc": "research_data_classification_standard.pdf",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a09",
+  "question": "How many hours of vacation leave can be carried over to the next year?",
+  "reference": "Up to 240 hours; any balance above that is forfeited on September 1.",
+  "gold_doc": "paid_leave_and_holidays.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a10",
+  "question": "How much paid parental leave does a primary caregiver get?",
+  "reference": "12 weeks, taken within 12 months of the birth or placement; eligibility starts after six months of service.",
+  "gold_doc": "paid_leave_and_holidays.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a11",
+  "question": "When is a doctor's note required for sick leave?",
+  "reference": "For any absence longer than three consecutive working days.",
+  "gold_doc": "paid_leave_and_holidays.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a12",
+  "question": "How many days a week can staff work remotely?",
+  "reference": "Up to three days per week with the supervisor's approval; fully remote work needs the divisional vice president's approval.",
+  "gold_doc": "remote_and_hybrid_work.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a13",
+  "question": "What are the core hours when remote staff must be reachable?",
+  "reference": "10:00 to 15:00 campus time, Monday through Friday.",
+  "gold_doc": "remote_and_hybrid_work.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a14",
+  "question": "How often do eyewash stations have to be flushed?",
+  "reference": "Weekly, by laboratory staff, who record the check on the tag.",
+  "gold_doc": "laboratory_safety_manual.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a15",
+  "question": "Within how many days must hazardous waste containers be picked up?",
+  "reference": "Within 90 days of the accumulation start date on the label.",
+  "gold_doc": "laboratory_safety_manual.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a16",
+  "question": "What is the minimum password length?",
+  "reference": "At least 14 characters (multi-factor authentication is also required).",
+  "gold_doc": "information_security_passwords_and_devices.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a17",
+  "question": "How fast do I have to report a lost or stolen laptop?",
+  "reference": "Within four hours of discovering the loss, to the IT Service Desk (extension 5-4357).",
+  "gold_doc": "information_security_passwords_and_devices.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a18",
+  "question": "What is the single-transaction limit on the purchasing card?",
+  "reference": "3,500 dollars (the monthly limit is 10,000 dollars).",
+  "gold_doc": "procurement_and_purchasing_card.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a19",
+  "question": "How many written quotes are needed for a 40,000 dollar purchase?",
+  "reference": "Three written quotes (required for purchases between 25,000 and 100,000 dollars).",
+  "gold_doc": "procurement_and_purchasing_card.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a20",
+  "question": "How long does a student have to appeal an academic integrity decision?",
+  "reference": "10 business days from the decision, to the Academic Integrity Appeals Board.",
+  "gold_doc": "academic_integrity_procedures.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a21",
+  "question": "How many hours per week does a standard graduate assistantship require?",
+  "reference": "20 hours per week (a 50 percent appointment).",
+  "gold_doc": "graduate_assistantship_handbook.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a22",
+  "question": "What is the minimum monthly stipend for doctoral graduate assistants?",
+  "reference": "2,400 dollars per month.",
+  "gold_doc": "graduate_assistantship_handbook.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a23",
+  "question": "What is the protocol for a missed insulin dose?",
+  "reference": "Check the patient's blood glucose immediately, do not give a double dose, contact the on-call clinician (extension 5-2020) before any correction dose, document the event and file a medication variance report within 24 hours.",
+  "gold_doc": "student_health_clinic_medication_protocol.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a24",
+  "question": "By what time is a weather closure announced?",
+  "reference": "By 5:30 a.m., through BrightAlert text messages, the website and the weather hotline.",
+  "gold_doc": "emergency_closure_and_severe_weather.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-a25",
+  "question": "How long is security camera footage kept?",
+  "reference": "30 days, unless it is needed for an investigation.",
+  "gold_doc": "records_retention_schedule.md",
+  "answerable": true
+ },
+ {
+  "qid": "hb-u01",
+  "question": "What is the monthly parking permit fee for staff?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u02",
+  "question": "What is the lodging limit per night for international travel?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u03",
+  "question": "What is the tuition rate per credit hour for out-of-state undergraduates?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u04",
+  "question": "Does the Institute reimburse relocation expenses for new hires?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u05",
+  "question": "How many sick leave hours can an employee donate to a coworker?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u06",
+  "question": "How many semesters of sabbatical can a faculty member take after tenure?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u07",
+  "question": "What is the policy on bringing pets to the office?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u08",
+  "question": "What are the library's opening hours during finals week?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u09",
+  "question": "How do employees enroll in the dental insurance plan?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ },
+ {
+  "qid": "hb-u10",
+  "question": "What is the maximum altitude for flying drones on campus?",
+  "reference": "Not found in the knowledge base (the handbook does not cover this).",
+  "gold_doc": null,
+  "answerable": false
+ }
+]

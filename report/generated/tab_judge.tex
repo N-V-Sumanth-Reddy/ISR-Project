@@ -1,0 +1,13 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Benchmark & n & RAG wins & ties & closed-book wins & p & order-consistent \% \\
+\midrule
+PubMedQA & 100 & 40 (40.0\%) & 52 (52.0\%) & 8 (8.0\%) & <0.001 & 67.0 \\
+Handbook & 25 & 14 (56.0\%) & 11 (44.0\%) & 0 (0.0\%) & <0.001 & 68.0 \\
+\bottomrule
+\end{tabular}
+\caption{Pairwise LLM-as-a-judge against the reference answer: RAG vs. the closed-book LLM on answerable test questions. A system wins only if the judge prefers it in both presentation orders; p is a two-sided sign test on wins vs. losses; the last column is the share of comparisons where both orders agreed.}
+\label{tab:judge}
+\end{table*}

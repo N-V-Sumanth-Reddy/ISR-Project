@@ -1,0 +1,10 @@
+[browser]
+gatherUsageStats = false
+
+[server]
+address = "localhost"
+headless = true
+maxUploadSize = 200
+
+[theme]
+primaryColor = "#2a78d6"
